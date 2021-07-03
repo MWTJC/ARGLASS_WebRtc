@@ -43,6 +43,10 @@ public class FragmentVideo extends SingleCallFragment implements View.OnClickLis
     private SurfaceViewRenderer localSurfaceView;
     private SurfaceViewRenderer remoteSurfaceView;
 
+
+    private boolean mirrorHorizontally = true;
+
+
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);

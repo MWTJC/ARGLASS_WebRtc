@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1b82d2</color>       <!--toolbar-->
+    <color name="colorPrimaryDark">#1b82d2</color>   <!--status bar-->
+    <color name="colorAccent">#1b82d2</color>
+    <color name="darkGround">#1E1E1E</color>
+    <color name="darkfocus">#234C6A</color>
+    <color name="whiteBText">#FFFFFF</color>
+    <color name="whitestext">#8E8E8E</color>
+    <color name="darkgrey">#5B5A5C</color>
+
+    <color name="av_bg_call_black">#281f1d</color>
+</resources>

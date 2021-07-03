@@ -1,2 +1,3 @@
+include ':phone'
 include ':app', ':rtc-chat'
 include ':libwebrtc'

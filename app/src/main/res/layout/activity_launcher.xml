@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="机体名留空将默认以ARGLASS登陆"
+            android:text="设备名留空将默认以ARGLASS登陆"
             android:textColor="@color/whiteBText"/>
 
         <Button
