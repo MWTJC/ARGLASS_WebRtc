@@ -1,98 +1,101 @@
-![logo](art/logo1.png)
+# video conference
+![logo](https://github.com/ddssingsong/webrtc_android/blob/master/art/logo1.png)
 
-# Sky p2p metting (p2p视频会议)
+本REDME继承于原型项目SKYRTC，在此表示感谢。以下是REDME原文。
 
-> [中文文档](<https://github.com/ddssingsong/webrtc_android/blob/master/README-zh.md>)
+## 概述
 
+> [English Documents](<https://github.com/ddssingsong/webrtc_android/blob/master/README.md>)
 
-
-A set of voice and video systems based on  [webrtc](https://webrtc.googlesource.com/) can be developed for single or multiple channels.
-
-
-
-Through this project, you can get a clearer understanding of the whole call process of webrtc. This project is just for learning webrtc. If you feel it meets your needs, just download the source code and start your performance.
+基于 [webrtc](https://webrtc.googlesource.com/) 开发的一套可以进行**单路**或者**多路**语音、视频的系统。高仿微信九宫格显示，最多可支持 **9** 路视频。
 
 
 
-## Server 
-
-You can find the server-side code from here. 
-
-NodeJs    https://github.com/ddssingsong/webrtc_server_node   for branch:branch_nodejs
-
-java      https://github.com/ddssingsong/webrtc_server_java         for branch:master
+通过这个项目，你可以深刻学习并理解webrtc通话的整个流程。这个项目只是作为学习使用，是一个很好的webrtc入门项目，如果你感兴趣的话，赶紧开始吧
 
 
 
-## Features
+## 服务器搭建
 
-- Completed
-  1. Support one-to-one voice and video
-  2. Support for many-to-many voice and video conferencing
-  3. Flexible configuration of signaling server and stun/turn forwarding penetration server
-  4. Dynamic permission application
-  5. Encapsulating core code into SDK
-  6. The whole process of calling, ringing and dialing
 
-- In progress
-  1. Various optimization
-  2. 2.0.0_preview in dev
+nodejs：https://github.com/ddssingsong/webrtc_server_node    for branch:branch_nodejs(会议)
+
+java： https://github.com/ddssingsong/webrtc_server_java     for branch:master
+
+
+如果需要详细的部署流程可参考博客
+
+https://blog.csdn.net/u011077027/article/details/86225524  （csdn）
 
 
 
-## Effect
+## 实现功能
 
-1. Single call
+- 已实现功能：
+  1. 支持一对一语音和视频
+  2. 支持多对多语音和视频会议
+  3. 灵活替换wss信令服务器和stun/turn转发穿透服务器
+  4. 动态权限申请
+  5. 切换摄像头、免提、开启静音、关闭视频保留声音
+  6. 呼叫、响铃、拨打电话的整个流程
+  7. 将信令模块和UI提取出来，将核心代码封装成SDK
+
+- 正在开发的功能：
+  1. 各种优化，使用体验啥的
+  2. 2.0.0_preview 正在开发中
+  
+     
+
+## 实现效果展示
+
+1. 单人通话
 
    ![process](art/image3.png)
 
 
 
-2. Multi-person conversation
+2. 多人会话
 
-   ![process](art/image5.jpg)
-
-
+   ![process](/art/image5.jpg)
 
 
 
-## CHANGELOG
+## 更新日志
 
 **2.0.0**
 
-Various optimization
+重构代码
 
-**v1.2.0:** 
+**v1.2.0**
 
- move to androidx
+使用androidx
 
-**v1.1.2:**   
+**v1.1.2** 
 
-release base on android support
+ 新增功能：
 
-**v1.1.1:**   
+1. 仿微信九宫格
+2. 会议添加扬声器和关闭摄像头功能
 
-This version has implemented the basic functions.
+**v1.1.1** 
+
+保存代码，便于后续的开发
 
 **v1.1.0**  
 
-Complete Basic Video Conferences
+完成基本视频会议
+
+# demo测试
+
+apk:[Android端测试](app/release/app-release.apk)
 
 
-# Android demo
+## 借鉴
 
-apk for master : [AndroidDemo.apk](app/release/app-release.apk)
+2. https://github.com/LingyuCoder/SkyRTC
 
-apk for branch_meeting : [AndroidDemo.apk](https://github.com/ddssingsong/webrtc_android/blob/branch_meeting/app/release/app-release.apk)
-
-
-
-## Links
-
-1. https://github.com/LingyuCoder/SkyRTC
-
-   server side,base on this
-
+   服务端和网页端的实现基于此修改
+   
 2. https://webrtc.org/
 
    webrtc网站
@@ -101,7 +104,7 @@ apk for branch_meeting : [AndroidDemo.apk](https://github.com/ddssingsong/webrtc
 
    google git demo
 
-   
+webrtc源码编译时间：2019年4月
 
 ## License
 
@@ -110,19 +113,12 @@ Copyright (c) 2019 哒哒瑟
 
 
 
-## QQ
+## 共同探索
 
-QQ Group：webrtc技术交流群
+QQ群名称：webrtc技术交流群
 
-QQ 群   号：601332720
-            619413989  （2群）
+QQ群   号：601332720
+           619413989 （2群）
 
 
 加入群一起探讨webrtc，分享好的开源项目
-
-
-
-
-
-
-
