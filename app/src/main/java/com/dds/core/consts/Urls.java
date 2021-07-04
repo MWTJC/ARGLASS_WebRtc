@@ -7,8 +7,9 @@ package com.dds.core.consts;
 public class Urls {
 
     //    private final static String IP = "192.168.2.111";此处切换服务器地址
-    public final static String IP = "192.168.2.222:5000";//寝室唐地址
+    //public final static String IP = "192.168.2.222:5000";//寝室唐地址
     //public final static String IP = "192.168.1.102:5000";//实验室孟地址
+    public final static String IP = "192.168.1.104:5000";//实验室唐地址
 
     private final static String HOST = "http://" + IP + "/";
 

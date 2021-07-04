@@ -10,7 +10,7 @@ public class SettingViewModel extends ViewModel {
 
     public SettingViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is setting fragment");
+        mText.setValue("如连接不上，请在此手动退出登陆重试");
     }
 
     public LiveData<String> getText() {
