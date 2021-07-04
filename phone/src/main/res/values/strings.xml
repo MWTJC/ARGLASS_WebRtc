@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">p2pChat</string>
+    <string name="app_name">一般设备端WebRtc</string>
     <string name="action_settings">设置</string>
     <string name="action_create_room">创建房间</string>
 

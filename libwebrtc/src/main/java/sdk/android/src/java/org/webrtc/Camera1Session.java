@@ -11,6 +11,7 @@
 package org.webrtc;
 
 import android.content.Context;
+import android.hardware.Camera;
 import android.os.Handler;
 import android.os.SystemClock;
 
@@ -270,7 +271,7 @@ class Camera1Session implements CameraSession {
               (TextureBufferImpl) frame.getBuffer(),
 
               /**/
-              /* mirror= */ info.facing == android.hardware.Camera.CameraInfo.CAMERA_FACING_FRONT,
+              /* mirror= */ info.facing == Camera.CameraInfo.CAMERA_FACING_FRONT,
               /* rotation= */ 0),
           /* rotation= */ getFrameOrientation(), frame.getTimestampNs());
       events.onFrameCaptured(Camera1Session.this, modifiedFrame);

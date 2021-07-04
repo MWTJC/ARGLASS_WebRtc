@@ -243,7 +243,7 @@ public class WebRTCEngine implements IEngine, Peer.IPeerEvent {
         localRenderer = new SurfaceViewRenderer(mContext);
         localRenderer.init(mRootEglBase.getEglBaseContext(), null);
         localRenderer.setScalingType(RendererCommon.ScalingType.SCALE_ASPECT_FIT);
-        localRenderer.setMirror(true);
+        localRenderer.setMirror(false);//镜像改动，有效，本地视频镜像，原文true
         localRenderer.setZOrderMediaOverlay(isOverlay);
 
         localSink = new ProxyVideoSink();
