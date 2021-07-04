@@ -6,7 +6,7 @@ package com.dds.core.consts;
  */
 public class Urls {
 
-    //    private final static String IP = "192.168.2.111";
+    //    private final static String IP = "192.168.2.111";//此处切换地址
     public final static String IP = "192.168.2.222:5000";//寝室唐地址
     //public final static String IP = "192.168.1.102:5000";//实验室孟地址
 
