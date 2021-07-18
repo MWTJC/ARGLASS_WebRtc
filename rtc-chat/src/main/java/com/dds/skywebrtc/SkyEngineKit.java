@@ -106,12 +106,13 @@ public class SkyEngineKit {
         mCurrentCallSession = new CallSession(context, room, audioOnly, mEvent);
         mCurrentCallSession.setTargetId(targetId);
         mCurrentCallSession.setIsComing(true);
-        mCurrentCallSession.setCallState(EnumType.CallState.Incoming);
+        mCurrentCallSession.setCallState(EnumType.CallState.Incoming);//自动化实验,失败
 
         // 开始响铃并回复
         mCurrentCallSession.shouldStartRing();
         mCurrentCallSession.sendRingBack(targetId, room);
 
+        mCurrentCallSession.joinHome(room);//自动化实验成功
 
         return true;
     }

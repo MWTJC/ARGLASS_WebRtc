@@ -3,12 +3,7 @@ package com.dds;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.text.TextUtils;
-import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.widget.Toolbar;
 
@@ -21,7 +16,7 @@ import com.dds.webrtc.R;
 
 public class LauncherActivity extends BaseActivity implements IUserState {
     private Toolbar toolbar;
-    private EditText etUser;
+    //private EditText etUser;
     private Button button8;
 
     @Override
@@ -30,6 +25,7 @@ public class LauncherActivity extends BaseActivity implements IUserState {
         setContentView(R.layout.activity_launcher);
 
         initView();
+        java();//自动化成功案例
 
         if (SocketManager.getInstance().getUserState() == 1) {
             startActivity(new Intent(this, MainActivity.class));
@@ -41,20 +37,25 @@ public class LauncherActivity extends BaseActivity implements IUserState {
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         toolbar = findViewById(R.id.toolbar);
-        etUser = findViewById(R.id.et_user);
+        //etUser = findViewById(R.id.et_user);
         button8 = findViewById(R.id.button8);
 
-        etUser.setText(App.getInstance().getUsername());
+        //etUser.setText(App.getInstance().getUsername());
     }
 
-    public void java(View view) {
-        String username = etUser.getText().toString().trim();
-        etUser.setText("ARGLASS", TextView.BufferType.EDITABLE);
+    public void java() {
+        String username = "ARGLASS";
+
+        /*
+
+        //etUser.setText("ARGLASS", TextView.BufferType.EDITABLE);
+
         if (TextUtils.isEmpty(username)) {
             Toast.makeText(this, "再次点击以默认ARGLASS登陆", Toast.LENGTH_LONG).show();
             return;
         }
 
+         */
         // 设置用户名
         App.getInstance().setUsername(username);
         // 添加登录回调

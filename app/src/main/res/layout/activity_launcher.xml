@@ -31,37 +31,21 @@
         >
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="设备名留空将默认以ARGLASS登陆"
-            android:textColor="@color/whiteBText"/>
+
 
         <Button
             android:id="@+id/button8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:onClick="java"
-            android:text="确定"
+
+            android:text="欢迎，若界面停在这里说明服务器设置有误"
             android:textAllCaps="false"
 
             android:background="@color/darkfocus"
             android:textColor="@color/whiteBText"
             android:defaultFocusHighlightEnabled="true"/>
-        <EditText
-            android:id="@+id/et_user"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
 
-            android:digits="0123456789qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM"
-            android:hint="输入机体名"
-            android:textColor="@color/whiteBText"
-            android:textColorHint="@color/whitestext"
-
-
-            />
     </LinearLayout>
 
 </LinearLayout>
